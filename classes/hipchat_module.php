@@ -41,7 +41,7 @@ class HipChat_Module extends Core_ModuleBase
 		$message = 'Notification: A new customer has signed up - <a href="'. site_url(url('/shop/customers/preview/', true, true) . $customer->id) . '"><strong>' . $customer->first_name . ' ' . $customer->last_name . '</strong></a>';
 	
 		$hipchat = new HipChat_Api();
-		$hipchat->post_room_message($message, 'blue');
+		$hipchat->post_room_message($message, 'yellow');
 	}
 	
 
